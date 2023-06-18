@@ -28,7 +28,6 @@ html{
 
 /*------------ BODY ------------- */
 body{
-    display: ;
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
     background-color: var(--bgcolor);
@@ -162,6 +161,7 @@ body{
 /* ---------- RESPONSIVE FOOTER ----------- */
 
 @media (max-width: 475px) {
+   
     .footer{
         margin: 0 auto;
         display: flex;
