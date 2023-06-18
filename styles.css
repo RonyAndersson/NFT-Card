@@ -1,0 +1,177 @@
+/*-------- GENERAL STYLES -------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------- COLORS ---------- */
+
+:root{
+
+    /* PRYMARY COLORS */
+    --text: hsl(215, 51%, 70%);
+    --value: hsl(178, 100%, 50%);
+
+    /* NEUTRAL */
+    --bgcolor: hsl(217, 54%, 11%);
+    --bgCard: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --titleCard: hsl(0, 0%, 100%);
+}
+
+/* -------- HTML ---------- */
+
+html{
+    font-size: 10px;
+}
+
+/*------------ BODY ------------- */
+body{
+    display: ;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    background-color: var(--bgcolor);
+}
+
+/* ------- CARD CONTAINER -------- */
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.card{
+    width: 30rem;
+    height: 50rem;
+    background-color: var(--bgCard); 
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 30px 2px 15px hsla(214, 56%, 8%, 0.250);
+}
+
+/* -------- IMAGE ------- */
+
+#logo{
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+/* -------- ARTICLE --------- */
+
+.card__description{
+    margin-top: 1.5rem;
+}
+
+.card__title{
+    color: var(--titleCard);
+    margin-bottom: 1.5rem;
+}
+
+.card__p{
+    color: var(--text);
+    font-size: 1.5rem;
+}
+
+.card__info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.value{
+    display: flex;
+    gap: .5rem;
+    color: var(--value);
+}
+
+.time{
+    display: flex;
+    gap: .5rem;
+    color: var(--text);
+}
+
+
+.line{
+    margin-top: 2rem;
+    color: var(--line);
+}
+
+/* ---------- CARD FOOTER ---------- */
+
+.card__footer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.avatar{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid beige;
+    border-radius: 50%;
+}
+
+.avatar__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer__p{
+    color: var(--text);
+    font-size: 1.5rem;
+}
+
+.autor{
+    color: var(--titleCard);
+}
+
+/* -------------- FOOTER --------------- */
+
+.footer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    background-color: var(--line);
+    color: var(--titleCard);
+    font-size: 1.5rem;
+    word-spacing: .5rem;
+}
+
+.footer a{
+    color: var(--value);
+}
+
+/* ---------- RESPONSIVE FOOTER ----------- */
+
+@media (max-width: 475px) {
+    .footer{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        height: 5rem;
+        align-items: center;
+        background-color: var(--line);
+        color: var(--titleCard);
+        font-size: 1.2rem;
+    }
+}
